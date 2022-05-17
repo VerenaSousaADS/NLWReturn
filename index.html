@@ -11,6 +11,7 @@
 
     <title>DoctorCare</title>
 </head>
+<!--  -->
 
 <body onscroll="onScroll()">
     <nav id="navigation" class="">
@@ -59,17 +60,17 @@
                 <a class="button" href="#">Agende sua Consulta</a>
                 <ul class="social-links">
                     <li>
-                        <a href="https://instagram.com.br"><img src="/assets/images/instagram 1.svg" alt="" /></a>
+                        <a target="_blank" href="https://instagram.com.br"><img src="/assets/images/instagram 1.svg" alt="" /></a>
                     </li>
                     <li>
-                        <a href="https://facebook.com.br"><img src="/assets/images/facebook 1.svg" alt="" /></a>
+                        <a target="_blank" href="https://facebook.com.br"><img src="/assets/images/facebook 1.svg" alt="" /></a>
                     </li>
                     <li>
-                        <a href="https://youtube.com.br"><img src="/assets/images/youtube 1.svg" alt="" /></a>
+                        <a target="_blank" href="https://youtube.com.br"><img src="/assets/images/youtube 1.svg" alt="" /></a>
                     </li>
                 </ul>
             </div>
-            <button class="open-menu">
+            <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
                 <!-- <img src="/assets/images/Icon.svg" alt="" /> -->
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
@@ -80,7 +81,7 @@
                         stroke-linejoin="round" />
                 </svg>
             </button>
-            <button class="close-menu">
+            <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
                 <img src="/assets/images/Close.svg" alt="Fechar">
             </button>
         </div>
