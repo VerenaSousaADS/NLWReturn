@@ -60,9 +60,50 @@ section{
     padding-block: 10rem;
 }
 
+/* ========NAVIGATION======================================================================================= */
+
+nav{
+    display: flex;
+    
+    height: var(--nav-height);
+
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+    z-index: 100;
+
+
+}
+
+nav .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.scroll{
+    background: var(--primary-color);
+   
+   
+}
+
+nav.scroll .logo path{
+    fill: white;
+    
+}
+
+nav.scroll button path{
+    stroke: white;
+}
+
+nav button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* ==========================#HOME ========================================================================= */
-
-
 
 #home{
 
@@ -193,49 +234,6 @@ section{
     line-height: 150%;
 }
 
-
-/* ========NAVIGATION======================================================================================= */
-
-nav{
-    display: flex;
-    
-    height: var(--nav-height);
-
-    position: fixed;
-    top: 0;
-    width: 100vw;
-
-    z-index: 100;
-
-
-}
-
-nav .wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav.scroll{
-    background: var(--primary-color);
-   
-   
-}
-
-nav.scroll .logo path{
-    fill: white;
-    
-}
-
-nav.scroll button path{
-    stroke: white;
-}
-
-nav button{
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
 /* =======MENU-EXPANDED================================================================================= */
 
