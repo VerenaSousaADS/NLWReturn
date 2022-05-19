@@ -14,9 +14,9 @@
 <!--  -->
 
 <body onscroll="onScroll()">
-    <nav id="navigation" class="">
+    <nav id="navigation">
         <div class="wrapper">
-            <a class="logo" href="#">
+            <a class="logo" href="#home">
                 <!-- <img src="/assets/images/Logo.svg" alt="Logomarca da DoctorCare" /> -->
                 <svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -53,20 +53,23 @@
             </a>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
                     <li><a href="#">Sobre</a></li>
                 </ul>
                 <a class="button" href="#">Agende sua Consulta</a>
                 <ul class="social-links">
                     <li>
-                        <a target="_blank" href="https://instagram.com.br"><img src="/assets/images/instagram 1.svg" alt="" /></a>
+                        <a target="_blank" href="https://instagram.com.br"><img src="/assets/images/instagram 1.svg"
+                                alt="" /></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://facebook.com.br"><img src="/assets/images/facebook 1.svg" alt="" /></a>
+                        <a target="_blank" href="https://facebook.com.br"><img src="/assets/images/facebook 1.svg"
+                                alt="" /></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://youtube.com.br"><img src="/assets/images/youtube 1.svg" alt="" /></a>
+                        <a target="_blank" href="https://youtube.com.br"><img src="/assets/images/youtube 1.svg"
+                                alt="" /></a>
                     </li>
                 </ul>
             </div>
@@ -87,39 +90,44 @@
         </div>
     </nav>
 
-    <header class="wrapper">
-        <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
-        <h1>Assistência médica simplificada para todos</h1>
-        <p>
-            Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz
-            de sua doença e proporcionar uma cura a longo prazo.
-        </p>
+    <header id="home">
 
-        <button>
-            <img src="/assets/images/whatsapp.svg" alt="Agendamento" />Agende sua
-            consulta
-        </button>
+        <div class="wrapper">
 
-        <img class="mulher" src="/assets/images/Foto.png" alt="Mulher negra vestindo moletom verde sorrindo" />
+            <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+            <h1>Assistência médica simplificada para todos</h1>
+            <p>
+                Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz
+                de sua doença e proporcionar uma cura a longo prazo.
+            </p>
 
-        <div class="stats">
-            <div class="stat">
-                <h3>+3.500</h3>
-                <p>Pacientes atendidos</p>
+            <button>
+                <img src="/assets/images/whatsapp.svg" alt="Agendamento" />Agende sua
+                consulta
+            </button>
+
+            <img class="mulher" src="/assets/images/Foto.png" alt="Mulher negra vestindo moletom verde sorrindo" />
+
+            <div class="stats">
+                <div class="stat">
+                    <h3>+3.500</h3>
+                    <p>Pacientes atendidos</p>
+                </div>
+
+                <div class="stat">
+                    <h3>+15</h3>
+                    <p>Especialistas disponíveis</p>
+                </div>
+
+                <div class="stat">
+                    <h3>+10</h3>
+                    <p>Anos no mercado</p>
+                </div>
             </div>
 
-            <div class="stat">
-                <h3>+15</h3>
-                <p>Especialistas disponíveis</p>
-            </div>
-
-            <div class="stat">
-                <h3>+10</h3>
-                <p>Anos no mercado</p>
-            </div>
         </div>
     </header>
-    <script src="main.js"></script>
+
     <section id="services">
         <div class="wrapper">
             <header>
@@ -131,36 +139,47 @@
                 <div class="card">
                     <img src="/assets/images/Group 2.svg" alt="">
                     <h3>Problemas digestivos</h3>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim.</p>
                 </div>
                 <div class="card">
                     <img src="/assets/images/Group 2.svg" alt="">
                     <h3>Saúde Hormonal</h3>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim.</p>
                 </div>
                 <div class="card">
                     <img src="/assets/images/Group 2.svg" alt="">
                     <h3>Bem-estar mental</h3>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim.</p>
                 </div>
                 <div class="card">
                     <img src="/assets/images/Group 2.svg" alt="">
                     <h3>Cuidados Pediátricos</h3>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim.</p>
                 </div>
                 <div class="card">
                     <img src="/assets/images/Group 2.svg" alt="">
                     <h3>Autoimune e Inflamação</h3>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim.</p>
                 </div>
                 <div class="card">
                     <img src="/assets/images/Group 2.svg" alt="">
                     <h3>Saúde do Coração</h3>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--  ScrollReaveal Lib   -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
 </body>
 
 
