@@ -103,6 +103,118 @@ nav button{
     cursor: pointer;
 }
 
+
+
+/* =======MENU-EXPANDED================================================================================= */
+
+body.menu-expanded{
+    overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) { /*Aplica pra todos exceto o nav*/
+    /* display: none; */ /*Não é uma boa prática*/
+    visibility: hidden;
+}
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu{
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu{
+    transform: translateY(100%)
+}
+
+body.menu-expanded .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: var(--nav-height);
+
+    transition: transform 300ms;
+
+    transform: translateY(0)
+
+}
+
+/* body.menu-expanded nav{
+    position: relative;
+} */
+
+.menu ul:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    margin-top: 6rem;
+    
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu .button{
+    background: #ffffff;
+    border-radius: 4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--primary-color);
+
+    display: inline-block;
+    padding: 16px 32px;
+
+    margin-top: 4.8rem;
+    margin-bottom: 8rem;
+
+}
+
+
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded nav button{
+    position: relative;
+    z-index: 100;
+}
+
+body.menu-expanded .logo path{
+    fill: white;
+    
+}
+
+body.menu-expanded button path{
+    stroke: white;
+}
+
+
 /* ==========================#HOME ========================================================================= */
 
 #home{
@@ -233,117 +345,6 @@ nav button{
     /* font-size: 1.6rem; */
     line-height: 150%;
 }
-
-
-/* =======MENU-EXPANDED================================================================================= */
-
-body.menu-expanded{
-    overflow: hidden;
-}
-
-body.menu-expanded > :not(nav) { /*Aplica pra todos exceto o nav*/
-    /* display: none; */ /*Não é uma boa prática*/
-    visibility: hidden;
-}
-
-.menu,
-.close-menu,
-body.menu-expanded .open-menu{
-    opacity: 0;
-    visibility: hidden;
-}
-
-body.menu-expanded .menu,
-body.menu-expanded .close-menu{
-    opacity: 1;
-    visibility: visible;
-}
-
-.menu{
-    transform: translateY(100%)
-}
-
-body.menu-expanded .menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--primary-color);
-
-    width: 100vw;
-    height: 100vh;
-
-    padding: var(--nav-height);
-
-    transition: transform 300ms;
-
-    transform: translateY(0)
-
-}
-
-/* body.menu-expanded nav{
-    position: relative;
-} */
-
-.menu ul:nth-child(1){
-    display: flex;
-    flex-direction: column;
-    gap: 4.8rem;
-
-    margin-top: 6rem;
-    
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 3.1rem;
-
-}
-
-.menu ul li a{
-    color: white;
-    text-decoration: none;
-}
-
-.menu .button{
-    background: #ffffff;
-    border-radius: 4rem;
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    color: var(--primary-color);
-
-    display: inline-block;
-    padding: 16px 32px;
-
-    margin-top: 4.8rem;
-    margin-bottom: 8rem;
-
-}
-
-
-.social-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3.2rem;
-}
-
-body.menu-expanded .logo,
-body.menu-expanded nav button{
-    position: relative;
-    z-index: 100;
-}
-
-body.menu-expanded .logo path{
-    fill: white;
-    
-}
-
-body.menu-expanded button path{
-    stroke: white;
-}
-
 
 /* ===========SERVICES ==========================================================================*/
 
