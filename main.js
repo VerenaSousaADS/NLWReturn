@@ -15,7 +15,7 @@ function closeMenu(){
 }
 
 
-
+// Biblioteca de terceiros (scrollrevealjs.org)
 
 ScrollReveal({
    origin: 'top',
@@ -26,5 +26,8 @@ ScrollReveal({
 #home .stats,
  #services,
  #services header,
- #services .card`);
+ #services .card,
+ #about,
+ about header,
+ about .content`);
 
