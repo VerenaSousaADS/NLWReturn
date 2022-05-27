@@ -194,6 +194,10 @@ nav button {
     cursor: pointer;
 }
 
+nav .button:hover{
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
 
 
 /* =======MENU-EXPANDED================================================================================= */
@@ -458,5 +462,7 @@ body.menu-expanded button path {
     gap: 0.8rem;
 }
 
-
+#contact .button{
+    margin-top: 3.2rem;
+}
 
