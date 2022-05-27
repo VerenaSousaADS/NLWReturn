@@ -14,6 +14,7 @@
     --secondary-color: hsl(0, 0%, 100%);
     --brand-beige: hsl(39, 100%, 97%);
     --brand-light: hsl(148, 23%, 89%);
+    --brand-dark: hsl(170, 100%, 14%);
 
     --bg-light: hsl(180, 14%, 97%);
 
@@ -102,6 +103,53 @@ section .content p {
 
     color: var(--paragraph);
 }
+
+.button {
+    background: var(--primary-color);
+
+    border: none;
+    border-radius: 4rem;
+
+
+    /* display: block; */
+
+    margin-bottom: 6rem;
+
+    padding: 1.6rem 3.2rem;
+    width: fit-content;
+
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+   
+
+    text-decoration: none;
+
+    transition: background 200ms;
+
+    /* meu código */
+
+    /* 
+    
+    text-align: center;
+    padding: 16px 32px;
+    flex: none;
+    margin: 0px 16px;
+
+     */
+}
+
+.button:hover{
+    background-color: var(--brand-dark)
+}
+
 
 /* ========NAVIGATION======================================================================================= */
 
@@ -281,6 +329,10 @@ body.menu-expanded button path {
 
 }
 
+#home .button{
+    margin-inline: auto;
+
+}
 
 #home p {
     font-size: 1.8rem;
@@ -289,46 +341,6 @@ body.menu-expanded button path {
     color: var(--paragraph);
 
     margin-bottom: 3.4rem;
-}
-
-#home button {
-    background: var(--primary-color);
-
-    border: none;
-    border-radius: 4rem;
-
-
-    /* display: block; */
-
-    margin-bottom: 6rem;
-
-    height: 6.2rem;
-    width: 26.3rem;
-
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--secondary-color);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
-
-    margin-right: auto;
-    margin-left: auto;
-
-    /* meu código */
-
-    /* 
-    
-    text-align: center;
-    padding: 16px 32px;
-    flex: none;
-    margin: 0px 16px;
-
-     */
-
 }
 
 #home .mulher {
@@ -423,3 +435,28 @@ body.menu-expanded button path {
     margin-top: 2.4rem;
     margin-bottom: 6rem;
 }
+
+
+/* ==============CONTACT=================================================================================================== */
+#contact{
+    text-align: left;
+}
+
+#contact header{
+    margin-bottom: 3.2rem;
+}
+
+#contact ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+#contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+
+
