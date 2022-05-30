@@ -150,6 +150,12 @@ section .content p {
     background-color: var(--brand-dark)
 }
 
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
 
 /* ========NAVIGATION======================================================================================= */
 
@@ -288,12 +294,7 @@ body.menu-expanded .menu {
 }
 
 
-.social-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3.2rem;
-}
+
 
 body.menu-expanded .logo,
 body.menu-expanded nav button {
@@ -466,3 +467,67 @@ body.menu-expanded button path {
     margin-top: 3.2rem;
 }
 
+#contact .email{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: black;
+}
+
+
+/* ============FOOTER ================================================================================================= */
+
+footer{
+    background-color: var(--primary-color);
+    padding-block: 6rem;
+    
+    text-align: left;
+
+    color: #FFFFFF;
+
+
+}
+
+footer .logo{
+    display: inline-block;
+    margin-bottom: 2.4rem;
+}
+
+footer .logo svg{
+    width: 23.6rem;
+    height: 3.1rem;
+}
+
+footer .logo path{
+    fill:#FFFFFF;
+
+}
+
+footer p{
+    color: var(--brand-beige);
+    line-height: 2;
+
+    margin-bottom: 3.2rem;
+}
+
+footer .social-links{
+    justify-content: flex-start;
+}
+
+
+/* ====== BACK TO TOP================================================================================================ */
+
+#backToTopButton{
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#backToTopButton.show{
+    opacity: 1;
+    visibility: visible;
+}
