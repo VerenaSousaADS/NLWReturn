@@ -625,11 +625,9 @@ footer .social-links {
     }
 
     nav#navigation .menu ul li a {
-
         color: var(--primary-color);
-
         opacity: 0.7;
-    }
+      }
 
     nav#navigation .menu a.button {
         display: flex;
