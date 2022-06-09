@@ -593,6 +593,11 @@ footer .social-links {
         padding-block: 16rem;
     }
 
+    section h2{
+        font-size: 4rem;
+        line-height: 5.2rem;
+    }
+
     /* ==========NAVIGATION=============================== */
 
     /* RESET */
@@ -783,4 +788,22 @@ footer .social-links {
     #home .mulher{
         width: 42rem;
     }
+
+    /* ===========SERVICES========================== */
+    #services h2{
+        width: 47rem;
+        margin-inline: auto;
+    }
+
+    #services .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+    #services .card {
+        width: 30%;
+        flex-grow: 1;
+    }
+
 }
