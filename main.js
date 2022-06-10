@@ -1,3 +1,6 @@
+let navigation = document.querySelector("#navigation")
+let backToTopButton = document.querySelector("#backToTopButton");
+
 window.addEventListener('scroll', onScroll)
 
 onScroll()
