@@ -589,6 +589,14 @@ footer .social-links {
         display: grid;
     }
 
+    .col-a{
+        grid-area: A;
+    }
+
+    .col-b{
+        grid-area: B;
+    }
+
     section{
         padding-block: 16rem;
     }
@@ -597,6 +605,8 @@ footer .social-links {
         font-size: 4rem;
         line-height: 5.2rem;
     }
+
+    
 
     /* ==========NAVIGATION=============================== */
 
@@ -748,14 +758,11 @@ footer .social-links {
     }
 
     #home .col-a{
-       grid-area: A;
+       
        text-align: left; 
        align-self: center; /*Alinha ele mesmo dentro da coluna*/
     }
 
-    #home .col-b{
-        grid-area: B;
-    }
 
     #home h1{
         font-size: 5.2rem;
@@ -806,4 +813,20 @@ footer .social-links {
         flex-grow: 1;
     }
 
+
+    /* ======ABOUT======================================== */
+    #about .wrapper{
+        grid-template-columns: 48rem 1fr;
+        grid-template-areas: 'B A';
+        gap: 6.7rem;
+    }
+
+    #about .col-a{
+        align-items: center;
+    }
+
+
+    #about .content p{
+        margin-bottom: 0;
+    }
 }
