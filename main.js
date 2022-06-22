@@ -8,6 +8,42 @@ onScroll()
 function onScroll(){
    showNavOnScroll()
    showBackToTopButtonOnScroll()
+
+   activateMenuCurrentSection(home)
+   activateMenuCurrentSection(services)
+   activateMenuCurrentSection(about)
+   activateMenuCurrentSection(contact)
+}
+
+function activateMenuCurrentSection(section){
+
+    //altura da página dividida ao meio
+    const tagertLine = scrollY + innerHeight / 2
+
+    //verificar se a seção passou da linha
+    //quais dados vou precisar?
+
+    const sectionTop = section.offsetTop
+    const sectionHeight = section.offsetHeight
+    const sectionTopReachOrPassedTagerline = tagertLine >= sectionTop
+
+    //verificar se a base está abaixo da linha alvo
+
+    const sectionEndsAt = sectionTop + sectionHeight
+    const sectionEndPassedTagertline = sectionEndsAt <= tagertLine
+
+    //limites da seção
+
+    const sectionBoundries = 
+        sectionTopReachOrPassedTagerline && !sectionEndPassedTagertline
+
+    const sectionId = section.getAttribute('id')
+    const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
+
+    menuElement.classList.remove('active')
+    if (sectionBoundries){
+        menuElement.classList.add('active')
+    }
 }
 
 function showNavOnScroll(){
