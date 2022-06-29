@@ -4,7 +4,7 @@
 
 <img src="./assets/images/DoctorCare.png">
 
-<p><strong> Tecnologias usadas no Projeto </strong></p>
+<h3><strong> Tecnologias usadas no Projeto </strong></h3>
 
 <ul>
 
